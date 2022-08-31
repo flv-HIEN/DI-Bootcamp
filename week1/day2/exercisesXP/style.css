@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+#icone{
+    float: left;
+    font-size: medium;
+    padding-left: 5%;
+    color: white;
+}
+#lien{
+    float:right;
+    padding-right: 5%;
+    text-decoration: none;
+    color: white;
+}
+#blanc{
+    height: 550px;
+    visibility: hidden;
+}
+footer{
+    height: 50px;
+    background-color: #ddd;
+    padding-top: 15px;
+    padding-bottom:20px;
+}
+p{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,138 @@
+/*header{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #eee;
+}
+.content{
+    margin-bottom: 30px;
+    background: url("mer.jpg") no-repeat center;
+    background-size: 100%;
+    height: 400px;
+    padding: 9px;
+}
+.bouton{
+    border: none;
+    background-color: rgb(0, 162, 255);
+}
+#email{
+    font-size: 50%;
+}
+.contenu{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+message{
+    font-size: 50px;
+}
+footer{
+    
+    justify-content: space-between;
+    display: flex;
+    background-color: #eee;
+    padding-top: 20px;
+}
+.icone{
+    color: blue;
+    margin-top: 90px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 50px;
+    width: 50px;
+    margin-left: 90px;
+
+}
+.text{
+    text-align: center;
+}*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button{color:aliceblue;
+    background-color: blue;
+    border-radius: 5px;
+    border : none;
+    padding: 6px;
+    cursor:pointer;
+}
+.content{
+    width: 100%;
+    height: calc(100vh - 40vh);
+    background: url("mer.jpg") no-repeat center;
+}
+.text{
+    font-size:xx-large;
+    color:white;
+    text-align: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.form button{
+    padding: 6px 15px;
+}
+input{
+    width: 300px;
+    height:30px;
+    border-style: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+.text-form{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer{
+    width: 100%;
+    height: calc(100vh - 68vh);
+    background-color: #eee;
+}
+.footer{
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.card{
+    width: 250px;
+    height:150px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content :center;
+}
+.icone{
+    margin: 5px auto;
+    padding-bottom: 10px;
+    color:blue;
+    font-size:xx-large;
+}
+h3{
+    text-align: center;
+    font-size:x-large;
+}
+.comment{
+    font-size:smaller;
+    text-align: center;
+    color: rgb(133, 130, 130);
+}

@@ -1,0 +1,30 @@
+table{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+th, td{
+    border: 1px solid black;
+    margin: auto;
+}
+th, td{
+    text-align: center;
+}
+
+.t1{
+    border: 1px solid red;
+    text-align: center;
+    color: red;
+    border-color: red;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+img{
+    border: 10px solid red;
+    width: 30%;
+    height: 5%;
+    display: block;
+    margin: auto;
+}
+.media{
+    text-align: center;
+}

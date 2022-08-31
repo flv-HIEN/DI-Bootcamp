@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    height: 80px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+    display: block;
+    padding: 8px;
+    color: #dddddd;
+    
+}
+.content{
+    width: 100%;
+    height: calc(200vh - 120vh);
+    background: url("avenger.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 260px;
+    padding-left: 70px;
+    overflow: hidden;
+}
+h1{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    
+}
+p{
+    color: rgb(21, 17, 17);
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    text-align: justify;
+    width: 500px;
+    height:30px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 60px;
+}
+a{
+    color: white;
+    border: solid;
+    background-color: violet;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+@media (max-width: 600){
+    h1{
+        font-size: 35px
+    }
+    nav{
+        background-color: rgb(10, 244, 213);
+        color:black;
+    }
+
+}
+/*@media screen and (max-width: 768){
+    h1{
+        font-size: 25px
+    }
+    nav{
+        background-color: yellow;
+        color:black;
+    }
+
+}
+
+@media screen and(min-width: 992) and(max-width: 1200){
+    nav{
+        background-color: red;
+        color:white;
+    }
+
+}
+@media screen and (min-width: 1200){
+    nav{
+        background-color: black;
+        color:white;
+    }
+
+}*/
