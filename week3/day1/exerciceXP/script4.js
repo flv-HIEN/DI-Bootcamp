@@ -26,44 +26,60 @@ let allBooks=[
     book1={
         "title":"l'aventure ambigue" ,
         "author":"Cheik Amidou Kane" ,
-        "image": "",
+        "image": "image11.jpg",
         "alreadyREad":true
     },
     book2={
         "title":"Une si longue lettre" ,
         "author":"Mariama Ba" ,
-        "image": "",
-        "alreadyREad":true
-    },
-    book3={
-        "title":"Le monde s'effondre" ,
-        "author":"Ferdinand Oyono" ,
-        "image": "",
+        "image": "image11.jpg",
         "alreadyREad":false
     }
 ]
 console.log(allBooks)
 let listLivre=document.querySelector("div");
 let tabl=document.createElement("table");
-let newTh=document.createElement("tr");
-let newTd=document.createElement("th");
-newTd.innerHTML="Name";
-let newTd2=document.createElement("th");
-newTd2.innerHTML="Author";
-newTh.appendChild(newTd);
-newTh.appendChild(newTd2);
-tabl.appendChild(newTh);
+let newTr1=document.createElement("tr");
+let newTh1=document.createElement("th");
+newTh1.innerHTML="Name & Author";
+let newTh2=document.createElement("th");
+newTh2.innerHTML="Image";
+let newTh3=document.createElement("th");
+newTh3.innerHTML="Image";
+newTr1.appendChild(newTh1);
+newTr1.appendChild(newTh2);
+newTr1.appendChild(newTh3);
+tabl.appendChild(newTr1);
 
-let newTr=document.createElement("tr");
-let newTd3=document.createElement("td");
-newTd3.innerHTML=allBooks[0].title;
-let newTd4=document.createElement("td");
-newTd4.innerHTML=allBooks[0].author;
-newTr.appendChild(newTd3);
-newTr.appendChild(newTd4);
-tabl.appendChild(newTr);
 
-let newTr2=document.createElement("tr");
+for(let i=0;i<2;i++){
+    let newTr2=document.createElement("tr");
+    let newTd1=document.createElement("td");
+    newTd1.innerHTML=allBooks[i].title+" written by "+allBooks[i].author;
+    newTr2.appendChild(newTd1);
+
+    let newTd2=document.createElement("td");
+    let imag=document.createElement("img");
+    imag.setAttribute("src",allBooks[i].image);
+    imag.style.width="100px";
+    newTd2.appendChild(imag);
+    newTr2.appendChild(newTd2);
+
+    let newTd3=document.createElement("td");
+    if(allBooks[i].alreadyREad==true){
+        newTd3.innerHTML="Dejà lu";
+        newTd3.style.background="green";
+    }else{
+        newTd3.innerHTML="Non lu";
+        newTd3.style.background="red";
+    }
+    newTr2.appendChild(newTd3);
+    tabl.appendChild(newTr2);
+}
+listLivre.appendChild(tabl);
+
+
+/*let newTr3=document.createElement("tr");
 let newTd5=document.createElement("td");
 newTd5.innerHTML=allBooks[1].title;
 let newTd6=document.createElement("td");
@@ -83,8 +99,25 @@ for(let i of childh){
     i.setAttribute('style',"border:solid 2px black");
 }
 parent.setAttribute('style',"border-collapse:collapse;");
+for(let i=0;i<3;i++){
+    let a=allBooks[i].title;
+    let b=allBooks[i].author;
+    let section=document.createElement("section");
+    listLivre.appendChild(section);
+    section.innerHTML=a+" is written by "+b;
 
+    
+}
+let section1=document.createElement("section");
+let image=document.createElement("img");
+section1.appendChild(image);
+image.setAttribute('src',"https://www.pexels.com/fr-fr/photo/gros-plan-de-papier-sur-fond-blanc-256450/");
 
+let image1=document.createElement("img");
+section1.appendChild(image1);
+image1.setAttribute('src',"https://www.pexels.com/fr-fr/photo/gros-plan-de-papier-sur-fond-blanc-256450/");
+
+listLivre.appendChild(section1)*/
 
 
 
